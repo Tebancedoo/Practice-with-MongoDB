@@ -24,3 +24,17 @@ db.inventario.insertMany([
 {item: "postcard", qty: 45, tags:["blue"], dim_cm: [10,15.25]}
 ]);
 ~~~
+
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/5081fad0-4033-417e-a6cb-2937d13d8f23)
+
+***
+
+## Base de datos realizada
+
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/5bf03b63-bc95-4a4b-b314-bd27924cd0a1)
+
+
+
+
+
+
