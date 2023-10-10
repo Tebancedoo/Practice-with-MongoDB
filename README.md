@@ -33,6 +33,10 @@ db.inventario.insertMany([
 
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/5bf03b63-bc95-4a4b-b314-bd27924cd0a1)
 
+***
+
+## Consulta para buscar el dim_cm entre 10 y 15
+
 
 
 
