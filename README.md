@@ -37,7 +37,11 @@ db.inventario.insertMany([
 
 ## Consulta para buscar el dim_cm entre 10 y 15
 
+~~~
 
+db.inventario.find({dim_cm:{$gt:10{$and $lt:{15}}});
+
+~~~
 
 
 
