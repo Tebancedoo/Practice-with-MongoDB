@@ -75,7 +75,7 @@ db.createCollection("telefonos");
 ## Insertamos numeros de telefono
 
 ~~~
-db.telefonos.insertMany([{"name": "AC3 phone", "brand": "ACME", "type": "phone", "price": "200", "rating": 3.8, "warranty_years": 1, "available": true},
+db.telefonos.insert([{"name": "AC3 phone", "brand": "ACME", "type": "phone", "price": "200", "rating": 3.8, "warranty_years": 1, "available": true},
 {"name": "AC7 phone", "brand": "ACME", "type": "phone", "price": "320", "rating": 4, "warranty_years": 1, "available": false},
 {"name": "AC3 series charger", "type": ["accesory","charger"], "price": "19", "rating": 2.8, "warranty_years": 0.25, "for": ["ac3", "ac7", "ac9"]},
 {"name": "AC3 case green", "type": ["accesory","case"], "color": "green", "price": 12, "rating": 1, "warranty_years": 0 },
