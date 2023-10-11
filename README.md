@@ -57,4 +57,12 @@ use tienda
 
 ***
 
+## Creo la colecciòn "telefonos"
+
+~~~
+db.createColletion("telefonos")
+~~~
+
+***
+
 ## Insertamos numeros de telefono
