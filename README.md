@@ -87,5 +87,16 @@ db.telefonos.insertMany([{"name": "AC3 phone", "brand": "ACME", "type": "phone",
 {"name": "phone service family plan", "type": "service", "monthly_price": 90, "rating": 4, "limits": {"voice": {"units": "minutes", "n": 1200, "over_rate": 0.05}, "data": { "n": "unlimited", "over_rate": 0 }, "sms": {"n": "unlimited", "over_rate": 0 }}, "sales_tax": true, "term_years": 2}]);
 ~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/b16eb919-a8e3-43b0-a100-57ff6aacbdb1)
+
+***
+
+## Consultas
+
+### Consultar elementos cuyo "type" sea "service"
 
 
+### Consultar elementos cuyo "type" sea "service" y el precio mensual mayor de 50
+
+
+### Consultar elementos cuyo "type" sea "service " o el precio mensual mayor de 50
