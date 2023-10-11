@@ -39,12 +39,11 @@ db.inventario.insertMany([
 
 ~~~
 
-db.inventario.find({dim_cm:{$gt:{10 $and $lt:15}}});
-
-db.inventario.find({"dim_cm" :{$gt:[10]} $and dim_cm:{$lt:[15]}});
+db.inventario.find({ $and: [{"dim_cm": {$gt: 10}}, {"dim_cm": {$lt: 15}} ]});
 
 ~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/2c24a8c8-c399-44d7-99f7-fefd10b31181)
 
 
 
