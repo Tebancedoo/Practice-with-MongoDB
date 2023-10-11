@@ -51,5 +51,10 @@ db.inventario.find({ $and: [{"dim_cm": {$gt: 10}}, {"dim_cm": {$lt: 15}} ]});
 
 ~~~
 
+use tienda
+
 ~~~
 
+***
+
+## Insertamos numeros de telefono
