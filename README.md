@@ -95,8 +95,19 @@ db.telefonos.insertMany([{"name": "AC3 phone", "brand": "ACME", "type": "phone",
 
 ### Consultar elementos cuyo "type" sea "service"
 
+~~~
+
+~~~
+
 
 ### Consultar elementos cuyo "type" sea "service" y el precio mensual mayor de 50
 
+~~~
+
+~~~
 
 ### Consultar elementos cuyo "type" sea "service " o el precio mensual mayor de 50
+
+~~~
+
+~~~
