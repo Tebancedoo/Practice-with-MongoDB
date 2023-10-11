@@ -41,7 +41,7 @@ db.inventario.insertMany([
 
 db.inventario.find({dim_cm:{$gt:{10 $and $lt:15}}});
 
-db.inventario.find({dim_cm:{$gt:10} $and dim_cm:{$lt:15}});
+db.inventario.find({"dim_cm" :{$gt:[10]} $and dim_cm:{$lt:[15]}});
 
 ~~~
 
