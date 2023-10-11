@@ -67,8 +67,26 @@ db.createCollection("telefonos");
 
 ~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/c2bb2c78-9a0e-4d5f-87c0-d25851d8e1f9)
 
 
 ***
 
 ## Insertamos numeros de telefono
+
+~~~
+db.telefonos.insert([
+
+{"name": "AC3 phone", "brand": "ACME", "type": "phone", "price": "200", "rating": 3.8, "warranty_years": 1, "available": true},
+{"name": "AC7 phone", "brand": "ACME", "type": "phone", "price": "320", "rating": 4, "warranty_years": 1, "available": false},
+{"name": "AC3 series charger", "type": ["accesory","charger"], "price": "19", "rating": 2.8, "warranty_years": 0.25, "for": ["ac3", "ac7", "ac9"]},
+{"name": "AC3 case green", "type": ["accesory","case"], "color": "green", "price": "12", "rating": 1, "warranty_years": 0 },
+{"name": "phone extended warranty", "type": "warranty", "price": "38", "rating": 5, "warranty_years": 2, "for": ["ac3", "ac7", "ac9", "qp7", "qp8", "qp9"] },
+{"name": "AC3 case black", "type": ["accesory","case"], "color": "black", "price": "12.5", "rating": 2, "warranty_years": 0.25, "available": false, "for", "ac3"},
+{"name": "AC3 case red", "type": ["accesory","case"], "color": "red", "price": "12", "rating": 4, "warranty_years": 0.25, "available": false, "for", "ac3"},
+{"name": "phone service basic plan", "type": "service", "monthly_price": "40", "rating": 3, "limits": {"voice": {"units": "minutes", "n": 400, "over_rate": 0.05}, "data": {"units": "gigabytes", "n": 20, "over_rate": 1 }, "sms": {"units": "text sent", "n": 100, "over_rate":0.001 } }, "terms_years" : 2},
+{"name": "phone service core plan", "type": "service", "monthly_price": "60", "rating": 3, "limits": {"voice": {"units": "minutes", "n": 1000, "over_rate": 0.05}, "data": { "n": "unlimited": "over_rate": 0 } },"term_years" : 1}
+{"name": "phone service family plan", "type": "service", "monthly_price": "90", "rating": 4, "limits": {"voice": {"units": "minutes", "n": 1200, "over_rate": 0.05}, "data": {"unlimited", "over_rate": 0 , "sms": {"n": "unlimited", "over_rate": 0 }}, "sales_tax": true, "term_years": 2}
+
+]);
+~~~
