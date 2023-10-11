@@ -51,17 +51,23 @@ db.inventario.find({ $and: [{"dim_cm": {$gt: 10}}, {"dim_cm": {$lt: 15}} ]});
 
 ~~~
 
-use tienda
+use tienda;
 
 ~~~
+
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/9691645c-9248-4a5d-a394-70da2db935f5)
 
 ***
 
 ## Creo la colecciòn "telefonos"
 
 ~~~
-db.createColletion("telefonos")
+
+db.createCollection("telefonos");
+
 ~~~
+
+
 
 ***
 
