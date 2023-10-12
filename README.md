@@ -96,7 +96,7 @@ db.telefonos.insertMany([{"name": "AC3 phone", "brand": "ACME", "type": "phone",
 ### Consultar elementos cuyo "type" sea "service"
 
 ~~~
-
+db.telefonos.find({"type": service});
 ~~~
 
 
