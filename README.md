@@ -96,8 +96,10 @@ db.telefonos.insertMany([{"name": "AC3 phone", "brand": "ACME", "type": "phone",
 ### Consultar elementos cuyo "type" sea "service"
 
 ~~~
-db.telefonos.find({"type": service});
+db.telefonos.find({"type": "service"});
 ~~~
+
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/83663da4-79ae-4a5f-8f5a-7f935c50d15e)
 
 
 ### Consultar elementos cuyo "type" sea "service" y el precio mensual mayor de 50
