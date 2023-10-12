@@ -105,11 +105,17 @@ db.telefonos.find({"type": "service"});
 ### Consultar elementos cuyo "type" sea "service" y el precio mensual mayor de 50
 
 ~~~
-  db.telefonos.find({ $and: [{"type": "service"}, {"price": {$gt: 50} ]});
+db.telefonos.find({ $and: [{"type": "service"}, {"monthly_price": {$gt: 50}} ]});
 ~~~
+
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/52ce1003-2e38-4d94-9a80-98867fdc8b8c)
+
 
 ### Consultar elementos cuyo "type" sea "service " o el precio mensual mayor de 50
 
-~~~
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/4dd982b2-23c9-4061-b26d-f178bb62f305)
 
+
+~~~
+db.telefonos.find({ $or: [{"type": "service"}, {"monthly_price": {$gt: 50}} ]});
 ~~~
