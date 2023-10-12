@@ -105,7 +105,7 @@ db.telefonos.find({"type": "service"});
 ### Consultar elementos cuyo "type" sea "service" y el precio mensual mayor de 50
 
 ~~~
-
+  db.telefonos.find({ $and: [{"type": "service"}, {"price": {$gt: 50} ]});
 ~~~
 
 ### Consultar elementos cuyo "type" sea "service " o el precio mensual mayor de 50
