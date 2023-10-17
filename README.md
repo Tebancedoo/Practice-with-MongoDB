@@ -124,3 +124,9 @@ db.telefonos.find({ $or: [{"type": "service"}, {"monthly_price": {$gt: 50}} ]});
 
 # Practice-with-MongoDB part 2
 
+***
+
+## Crear la base de datos "base1"
+
+
+
