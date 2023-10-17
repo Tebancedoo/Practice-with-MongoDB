@@ -211,4 +211,10 @@ db.articulos.find({ $and: [{"rubro": "impresora"}, {"precio": {$gte: 3500}} ]});
 
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/2744f6e8-81c8-48aa-ba8b-f9b54822efde)
 
+***
 
+## Imprimir todos los artículos cuyo stock se encuentra comprendido entre 0 y 4.
+
+~~~
+
+~~~
