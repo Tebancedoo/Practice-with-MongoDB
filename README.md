@@ -143,7 +143,18 @@ db.createCollection("articulos");
 ~~~
 ***
 
-## 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/5b6b3b9e-52ff-430b-94ac-4a6d8c17f779)
+
+
+## Cargar 6 documentos
+
+~~~
+db.artuculos.insertMany(
+{
+
+}
+);
+~~~
 
 
 
