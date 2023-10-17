@@ -159,7 +159,8 @@ db.articulos.insertMany([
 ]);
 ~~~
 
-![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/01b14735-480f-4f54-a908-ee506be099c0)
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/f7cdbb44-973c-460a-a648-7a17a606f1d4)
+
 
 ***
 
@@ -169,7 +170,7 @@ db.articulos.insertMany([
 db.articulos.find();
 ~~~
 
-![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/2ae376a6-eda3-427f-958a-dca40743bdc1)
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/34dd153c-c49b-41a3-89da-b467130aa2e9)
 
 ***
 
