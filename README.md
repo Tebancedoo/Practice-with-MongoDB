@@ -150,21 +150,34 @@ db.createCollection("articulos");
 
 ~~~
 db.articulos.insertMany([
-{_id: 1, nombre: "impresora lenovo", rubro: "lenovo impresora",  precio: 150000, stock: 200},
-{_id: 2, nombre: "mouse tk", rubro: "tk mouse",  precio: 80000, stock: 50},
-{_id: 3, nombre: "impresora multifuncional", rubro: "multifuncional hp impresora",  precio: 200000, stock: 3},
-{_id: 4, nombre: "pantalla lenovo", rubro: "lenovo pantalla",  precio: 100000, stock: 30},
-{_id: 5, nombre: "teclado hp", rubro: "hp teclado",  precio: 50000, stock: 55},
-{_id: 6, nombre: "audifonos gamer", rubro: "logitech audifonos",  precio: 150000, stock: 90}
+{_id: 1, nombre: "impresora lenovo", rubro: "impresora",  precio: 150000, stock: 200},
+{_id: 2, nombre: "mouse tk", rubro: "mouse",  precio: 80000, stock: 50},
+{_id: 3, nombre: "impresora multifuncional", rubro: "impresora",  precio: 200000, stock: 3},
+{_id: 4, nombre: "pantalla lenovo", rubro: "pantalla",  precio: 100000, stock: 30},
+{_id: 5, nombre: "teclado hp", rubro: "teclado",  precio: 50000, stock: 55},
+{_id: 6, nombre: "audifonos gamer", rubro: "audifonos",  precio: 150000, stock: 90}
 ]);
 ~~~
 
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/01b14735-480f-4f54-a908-ee506be099c0)
 
+***
 
+## Imprimir todos los documentos de la colección "articulos"
 
+~~~
+db.articulos.find();
+~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/2ae376a6-eda3-427f-958a-dca40743bdc1)
 
+***
+
+## Imprimir todos los documentos de la colección "articulos" que no son impresoras
+
+~~~
+db.articulos.find({ $not: [rubro: "impresora"]});
+~~~
 
 
 
