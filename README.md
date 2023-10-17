@@ -128,8 +128,22 @@ db.telefonos.find({ $or: [{"type": "service"}, {"monthly_price": {$gt: 50}} ]});
 
 ## Crear la base de datos "base1"
 
+~~~
+use base1
+~~~
+
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/1c183e9f-389d-4091-b44a-08f223409213)
 
+***
+
+## Crear la collection "articulos"
+
+~~~
+db.createCollection("articulos");
+~~~
+***
+
+## 
 
 
 
