@@ -216,8 +216,9 @@ db.articulos.find({ $and: [{"rubro": "impresora"}, {"precio": {$gte: 3500}} ]});
 ## Imprimir todos los artículos cuyo stock se encuentra comprendido entre 0 y 4.
 
 ~~~
-db.articulos.find({ stock: { $in: [0, 4] } });
+db.articulos.find( { stock: { $in: [ 0,1,2,3,4  ]} })
 ~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/8e85b965-4b4c-4ce1-97c6-4d3f6d54f674)
 
 
