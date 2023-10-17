@@ -176,10 +176,10 @@ db.articulos.find();
 ## Imprimir todos los documentos de la colección "articulos" que no son impresoras
 
 ~~~
-db.articulos.find({ $ne: {rubro: "impresora"} });
+db.articulos.find({ rubro: {$ne: "impresora"} });
 ~~~
 
-![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/fb3be6a6-0ee1-4d9a-b904-38f6388427f6)
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/16d6d94a-89af-4d06-bd8e-917c7b036639)
 
 ***
 
@@ -196,15 +196,16 @@ db.articulos.find({"rubro": "mouse"});
 ## Imprimir todos los artículos con un precio mayor o igual a 5000.
 
 ~~~
-db.articulos.find({$gte: {"precio": 5000} });
+db.articulos.find({"precio":  { $gte: 5000} });
 ~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/fc0c48ea-c0b5-404e-9cc1-ff6beda5446e)
 
 ***
 
 ## Imprimir todas las impresoras que tienen un precio mayor o igual a 3500.
 
 ~~~
-
+db.articulos.find({ rubro: {$eq: "impresora"} });
 ~~~
 
