@@ -120,3 +120,7 @@ db.telefonos.find({ $or: [{"type": "service"}, {"monthly_price": {$gt: 50}} ]});
 
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/4dd982b2-23c9-4061-b26d-f178bb62f305)
 
+***
+
+# Practice-with-MongoDB part 2
+
