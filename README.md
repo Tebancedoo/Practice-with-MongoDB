@@ -150,14 +150,15 @@ db.createCollection("articulos");
 
 ~~~
 db.articulos.insertMany([
-{},
-{},
-{},
-{},
-{},
-{}
+{_id: 1, nombre: impresora lenovo, rubro: lenovo impresora,  precio: 150000, stock: 200},
+{_id: 2, nombre: mouse tk, rubro: tk mouse,  precio: 80000, stock: 50},
+{_id: 3, nombre: impresora multifuncional, rubro: multifuncional hp impresora,  precio: 200000, stock: 3},
+{_id: 4, nombre: pantalla lenovo, rubro: lenovo pantalla,  precio: 100000, stock: 30},
+{_id: 5, nombre: teclado hp, rubro: hp teclado,  precio: 50000, stock: 55},
+{_id: 6, nombre: audifonos gamer, rubro: logitech audifonos,  precio: 150000, stock: 90}
 ]);
 ~~~
+
 
 
 
