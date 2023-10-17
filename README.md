@@ -129,7 +129,7 @@ db.telefonos.find({ $or: [{"type": "service"}, {"monthly_price": {$gt: 50}} ]});
 ## Crear la base de datos "base1"
 
 ~~~
-use base1
+  use base1
 ~~~
 
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/1c183e9f-389d-4091-b44a-08f223409213)
@@ -150,17 +150,16 @@ db.createCollection("articulos");
 
 ~~~
 db.articulos.insertMany([
-{_id: 1, nombre: "impresora lenovo", rubro: "impresora",  precio: 150000, stock: 200},
-{_id: 2, nombre: "mouse tk", rubro: "mouse",  precio: 80000, stock: 50},
-{_id: 3, nombre: "impresora multifuncional", rubro: "impresora",  precio: 200000, stock: 3},
-{_id: 4, nombre: "pantalla lenovo", rubro: "pantalla",  precio: 100000, stock: 30},
-{_id: 5, nombre: "teclado hp", rubro: "teclado",  precio: 50000, stock: 55},
-{_id: 6, nombre: "audifonos gamer", rubro: "audifonos",  precio: 150000, stock: 90}
+{ _id: 1, nombre: "impresora lenovo", rubro: "impresora",  precio: 150000, stock: 200},
+{ _id: 2, nombre: "mouse tk", rubro: "mouse",  precio: 80000, stock: 50},
+{ _id: 3, nombre: "impresora multifuncional", rubro: "impresora",  precio: 200000, stock: 3},
+{ _id: 4, nombre: "pantalla lenovo", rubro: "pantalla",  precio: 100000, stock: 30},
+{ _id: 5, nombre: "teclado hp", rubro: "teclado",  precio: 50000, stock: 55},
+{ _id: 6, nombre: "audifonos gamer", rubro: "audifonos",  precio: 150000, stock: 90}
 ]);
 ~~~
 
-![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/f7cdbb44-973c-460a-a648-7a17a606f1d4)
-
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/a2922376-16ee-4db1-a2d2-973199adde48)
 
 ***
 
@@ -170,7 +169,7 @@ db.articulos.insertMany([
 db.articulos.find();
 ~~~
 
-![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/34dd153c-c49b-41a3-89da-b467130aa2e9)
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/028116f0-112f-41dc-8cd4-9fcb1a981c80)
 
 ***
 
@@ -182,12 +181,30 @@ db.articulos.find({ $ne: {rubro: "impresora"} });
 
 ![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/fb3be6a6-0ee1-4d9a-b904-38f6388427f6)
 
+***
+
 ## Imprimir todos los artículos que pertenecen al rubro de "mouse"
 
 ~~~
 db.articulos.find({"rubro": "mouse"});
 ~~~
 
-![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/8384c022-79c3-4963-ab06-720b8bcbcf92)
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/06819266-2bb3-4ee3-9932-b84277aaca07)
 
+***
+
+## Imprimir todos los artículos con un precio mayor o igual a 5000.
+
+~~~
+db.articulos.find({$gte: {"precio": 5000} });
+~~~
+
+
+***
+
+## Imprimir todas las impresoras que tienen un precio mayor o igual a 3500.
+
+~~~
+
+~~~
 
