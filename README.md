@@ -149,11 +149,14 @@ db.createCollection("articulos");
 ## Cargar 6 documentos
 
 ~~~
-db.artuculos.insertMany(
-{
-
-}
-);
+db.articulos.insertMany([
+{},
+{},
+{},
+{},
+{},
+{}
+]);
 ~~~
 
 
