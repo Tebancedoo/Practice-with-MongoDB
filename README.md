@@ -177,8 +177,17 @@ db.articulos.find();
 ## Imprimir todos los documentos de la colección "articulos" que no son impresoras
 
 ~~~
-db.articulos.find({ $not: [rubro: "impresora"]});
+db.articulos.find({ $ne: {rubro: "impresora"} });
 ~~~
 
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/fb3be6a6-0ee1-4d9a-b904-38f6388427f6)
+
+## Imprimir todos los artículos que pertenecen al rubro de "mouse"
+
+~~~
+db.articulos.find({"rubro": "mouse"});
+~~~
+
+![image](https://github.com/Tebancedoo/Practice-with-MongoDB/assets/115185706/8384c022-79c3-4963-ab06-720b8bcbcf92)
 
 
