@@ -216,5 +216,8 @@ db.articulos.find({ $and: [{"rubro": "impresora"}, {"precio": {$gte: 3500}} ]});
 ## Imprimir todos los artículos cuyo stock se encuentra comprendido entre 0 y 4.
 
 ~~~
-
+db.articulos.find({ stock: { $in: [0, 4] } });
 ~~~
+
+
+
