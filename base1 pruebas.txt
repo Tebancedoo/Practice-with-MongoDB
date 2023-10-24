@@ -1,0 +1,112 @@
+//
+use base1
+
+db.clientes.insertOne({ _id :1, nombre: "Martinez Victor", mail: "mvictor@gmail.com", dirreccion: {calle: "Colon", numero: 620, codigopostal: 6000 }});
+
+
+db.clientes.insertOne({_id:2, nombre: "Alonso Carlos", mail: "acarlos@gmail.com", direccion: {calle: "Colon", numero: 150, codigopostal: 5000}})
+
+
+db.clientes.insertOne({_id:3, nombre: "Gonzales Marta", mail: "gmarta@outlook.com", direccion: {calle: "Colon", numero :1200, codigopostal: 5000}})
+
+
+db.clientes.insertOne({_id: 4, nombre: "Ferrero Ariel", mail: "fariel@yahoo.com", direccion: {calle: "Dean Funes", numero: 23, codigopostal: 5002}})
+
+
+db.clientes.insertOne({_id: 5, nombre: "Fernandez Diego", mail: "fdiego@gmail.com", direccion: {calle: "Dean Funes", numero: 561, codigopostal: 5002}})
+
+
+db.clientes.insertOne({_id: 6, nombre: "Ferrero Ariel", mail: "fariel@yahoo.com", direccion: {calle: "Dean Funes", numero: 23, codigopostal: 5002}})
+
+
+db.clientes.insertOne({_id: 7, nombre: "Fernandez Diego", mail: "fdiego@gmail.com", direccion: {calle: "Dean Funes", numero: 561, codigopostal: 5002}})
+
+
+//consultar los usuaios de calle colon
+
+db.clientes.find({"direccion.calle": "Colon"});
+
+
+//consultar calle conlon y numero entre 1 y 1000
+
+db.clientes.find({"direccion.calle": "Colon"} ,{"direccion.numero": 1 });
+
+db.clientes.find({"direccion.calle": "Colon"} ,{"direccion.numero": {$gte 1, $lte 1000}});
+
+
+
+//crear coleccion autos
+
+db.createCollection("autos")
+
+//insertar datos
+
+db.autos.insertOne({placa: "bbb222", fechahora: new Date() });
+
+db.autos.insertOne({placa: "ccc333", fechahora: new Date()});
+
+db.autos.insertOne({placa: "aaa111", fechahora: new Date()});
+
+
+//crear coleccion autos
+
+db.createCollection("empleados")
+
+
+//inserto datos en empleados
+
+db.empleados.insertOne({nombre: "Jose Ramirez", fecha:  new Date(2000,03,04)});
+
+db.empleados.insertOne({nombre: "Marco Perez", fecha:  new Date(2020,09,10)});
+
+
+
+//coleccion llamada alumnos
+
+db.alumnos.drop()
+
+db.alumnos.insertMany([{_id: 20456123, apellido: "Gonzales", nombre: "Ana", domicilio: "Colon 123", fechanacimiento: new Date(1990,7,15)},
+ {_id: 45123845, apellido: "Juarez", nombre: "Bernardo", domicilio: "Sucre 456", fechanacimiento: new Date(1964,0,1)}, 
+{_id:16567512, apellido:"Perez", nombre: "Laura",  domicilio:"21 de septiembre 3233", fechanacimiento: new Date(1979,3,2)}])
+
+
+//consultar el apellido y la fecha
+
+db.alumnos.find({},{apellido : 1}, { fechanacimiento : 1})
+
+
+
+//consultar todos los datos ordenador  por la fecha
+
+db.alumnos.find().sort({fechanacimiento: -1})
+
+
+
+//consultar todos los alumnos que nacieron a partir de 1970
+
+db.alumnos.find({ fechanacimiento: {$gte: 1970} })
+
+
+//consulta propia
+
+
+
+//cosuntal propia
+
+
+
+//exportar base de datos
+
+sudo mongoexport --db newdb -c restaurants --out newdbexport.json
+
+
+//importar base de datos
+
+wget https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json
+
+sudo mongoimport --db newdb --collection restaurants --file primer-dataset.json
+
+
+
+
+
