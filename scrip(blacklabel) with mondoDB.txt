@@ -16,7 +16,26 @@ db.createCollection("productos");
 db.estados.insertMany([{"id_estado": "1", "estado": "activo"},
 {"_id": "2", "estado": "inactivo"}]);
 
-db.usuarios.insertOne({"id_usuario": "1", "documento": "123321", "nombre_usuario": "draco ", "apellido_usuario": "perez", "contrase�a": "555", "correo": "dp@gmail.com", "id_estado": "1"});
+db.usuarios.insertOne({"id_usuario": "1", "documento": "123321", "nombre_usuario": "draco ", "apellido_usuario": "perez", "contraseña": "555", "correo": "dp@gmail.com", "id_estado": "1"});
+
+db.usuarios.insertMany({"id_usuario": "2", "documento": "111", "nombre_usuario": "Jose", "apellido_usuario": "Gomez", "contraseña": "890", "correo": "jp@gmail.com", "id_estado": "1"}, 
+{"id_usuario": "3", "documento": "222", "nombre_usuario": "Carlos", "apellido_usuario": "Colon", "contraseña": "741000", "correo": "cc@gmail.com", "id_estado": "1"},
+{"id_usuario": "4", "documento": "333", "nombre_usuario": "Juan", "apellido_usuario": "Bolivar", "contraseña": "aac", "correo": "jb@gmail.com", "id_estado": "1"},
+{"id_usuario": "5", "documento": "444", "nombre_usuario": "Steven", "apellido_usuario": "Jorigua", "contraseña": "piuj", "correo": "sj@gmail.com", "id_estado": "1"},
+{"id_usuario": "6", "documento": "555", "nombre_usuario": "Jorge", "apellido_usuario": "Gomez", "contraseña": "jkljiojui", "correo": "jg@gmail.com", "id_estado": "1"},
+{"id_usuario": "7", "documento": "666", "nombre_usuario": "Julian", "apellido_usuario": "Rojas", "contraseña": "asdf", "correo": "jr@gmail.com", "id_estado": "1"},
+{"id_usuario": "8", "documento": "777", "nombre_usuario": "kaza", "apellido_usuario": "Zar", "contraseña": "pijo", "correo": "k<@gmail.com", "id_estado": "1"},
+{"id_usuario": "9", "documento": "888", "nombre_usuario": "Sergio", "apellido_usuario": "Lozada", "contraseña": "jjlkjlk", "correo": "sl@gmail.com", "id_estado": "1"},
+{"id_usuario": "10", "documento": "999", "nombre_usuario": "Kazuma", "apellido_usuario": "Diaz", "contraseña": "uiojj", "correo": "kd@gmail.com", "id_estado": "1"},
+{"id_usuario": "11", "documento": "100", "nombre_usuario": "Paulo", "apellido_usuario": "Mendivelso", "contraseña": "546654132654", "correo": "pm@gmail.com", "id_estado": "1"},
+{"id_usuario": "12", "documento": "101", "nombre_usuario": "Diego", "apellido_usuario": "Lozano", "contraseña": "00564", "correo": "dñ@gmail.com", "id_estado": "1"},
+{"id_usuario": "13", "documento": "102", "nombre_usuario": "Esteven", "apellido_usuario": "Gomez", "contraseña": "uiop", "correo": "eg@gmail.com", "id_estado": "1"},
+{"id_usuario": "14", "documento": "103", "nombre_usuario": "Pepe", "apellido_usuario": "Londra", "contraseña": "adsf0", "correo": "pl@gmail.com", "id_estado": "1"},
+{"id_usuario": "15", "documento": "104", "nombre_usuario": "Maicol", "apellido_usuario": "Mar", "contraseña": "89jkjjk", "correo": "mm@gmail.com", "id_estado": "1"},
+{"id_usuario": "16", "documento": "105", "nombre_usuario": "Tatiana", "apellido_usuario": "Cortes", "contraseña": "adfasf890", "correo": "tc@gmail.com", "id_estado": "1"},
+{"id_usuario": "17", "documento": "106", "nombre_usuario": "Maria", "apellido_usuario": "Rozo", "contraseña": "5690", "correo": "mr@gmail.com", "id_estado": "1"},
+{"id_usuario": "18", "documento": "108", "nombre_usuario": "Fernanda", "apellido_usuario": "Lopez", "contraseña": "455460", "correo": "fl@gmail.com", "id_estado": "1"},
+{"id_usuario": "19", "documento": "109", "nombre_usuario": "Lorena", "apellido_usuario": "Muse", "contraseña": "867695", "correo": "lm@gmail.com", "id_estado": "1"});
 
 db.roles.insertMany([{"id_rol": "1", "rol": "administrado"},
 {"_id": "2", "rol": "usuario"}]);
