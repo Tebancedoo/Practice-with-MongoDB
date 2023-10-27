@@ -93,8 +93,9 @@ db.alimnos.find(
    { _id: { $in: [ 5, _id("3") ] } }
 )
 
-//cosuntal propia
+//cosulta propia
 
+db.alumnos.find({ domicilio: {$ne: "Colon 123"} });
 
 
 //exportar base de datos
