@@ -18,7 +18,7 @@ db.estados.insertMany([{"id_estado": "1", "estado": "activo"},
 
 db.usuarios.insertOne({"id_usuario": "1", "documento": "123321", "nombre_usuario": "draco ", "apellido_usuario": "perez", "contraseña": "555", "correo": "dp@gmail.com", "id_estado": "1"});
 
-db.usuarios.insertMany({"id_usuario": "2", "documento": "111", "nombre_usuario": "Jose", "apellido_usuario": "Gomez", "contraseña": "890", "correo": "jp@gmail.com", "id_estado": "1"}, 
+db.usuarios.insertMany([{"id_usuario": "2", "documento": "111", "nombre_usuario": "Jose", "apellido_usuario": "Gomez", "contraseña": "890", "correo": "jp@gmail.com", "id_estado": "1"}, 
 {"id_usuario": "3", "documento": "222", "nombre_usuario": "Carlos", "apellido_usuario": "Colon", "contraseña": "741000", "correo": "cc@gmail.com", "id_estado": "1"},
 {"id_usuario": "4", "documento": "333", "nombre_usuario": "Juan", "apellido_usuario": "Bolivar", "contraseña": "aac", "correo": "jb@gmail.com", "id_estado": "1"},
 {"id_usuario": "5", "documento": "444", "nombre_usuario": "Steven", "apellido_usuario": "Jorigua", "contraseña": "piuj", "correo": "sj@gmail.com", "id_estado": "1"},
@@ -35,7 +35,7 @@ db.usuarios.insertMany({"id_usuario": "2", "documento": "111", "nombre_usuario":
 {"id_usuario": "16", "documento": "105", "nombre_usuario": "Tatiana", "apellido_usuario": "Cortes", "contraseña": "adfasf890", "correo": "tc@gmail.com", "id_estado": "1"},
 {"id_usuario": "17", "documento": "106", "nombre_usuario": "Maria", "apellido_usuario": "Rozo", "contraseña": "5690", "correo": "mr@gmail.com", "id_estado": "1"},
 {"id_usuario": "18", "documento": "108", "nombre_usuario": "Fernanda", "apellido_usuario": "Lopez", "contraseña": "455460", "correo": "fl@gmail.com", "id_estado": "1"},
-{"id_usuario": "19", "documento": "109", "nombre_usuario": "Lorena", "apellido_usuario": "Muse", "contraseña": "867695", "correo": "lm@gmail.com", "id_estado": "1"});
+{"id_usuario": "19", "documento": "109", "nombre_usuario": "Lorena", "apellido_usuario": "Muse", "contraseña": "867695", "correo": "lm@gmail.com", "id_estado": "1"}]);
 
 db.roles.insertMany([{"id_rol": "1", "rol": "administrado"},
 {"_id": "2", "rol": "usuario"}]);
