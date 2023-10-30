@@ -56,7 +56,7 @@ db.productos.insertOne({"id_producto": "1", "codigo_producto": "1550", "nombre_p
 db.productos.insertMany([{"id_producto": "1", "codigo_producto": "1550", "nombre_producto": "audifonos inhalambricos", "id_categoria": "1", "documento_credor": "000", "precio_producto": "25000", "id_estado": "1"},
 {"id_producto": "2", "codigo_producto": "15", "nombre_producto": "pantalla", "id_categoria": "3", "documento_credor": "000", "precio_producto": "50000", "id_estado": "1"},
 {"id_producto": "3", "codigo_producto": "19", "nombre_producto": "mouse gamer", "id_categoria": "4", "documento_credor": "000", "precio_producto": "30000", "id_estado": "1"},
-{"id_producto": "4", "codigo_producto": "100", "nombre_producto": "computador portatil", "id_categoria": "2", "documento_credor": "000", "precio_producto": "2000000", "id_estado": "1"}
+{"id_producto": "4", "codigo_producto": "100", "nombre_producto": "computador portatil", "id_categoria": "2", "documento_credor": "000", "precio_producto": "2000000", "id_estado": "1"},
 {"id_producto": "5", "codigo_producto": "556", "nombre_producto": "pantalla", "id_categoria": "3", "documento_credor": "000", "precio_producto": "200000", "id_estado": "1"}]);
 
 
