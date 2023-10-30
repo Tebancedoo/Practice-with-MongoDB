@@ -43,10 +43,10 @@ db.roles.insertMany([{"id_rol": "1", "rol": "administrado"},
 db.permisos.insertOne({"id": "1", "documento": "123321", "id_rol": "2"});
 
 db.categorias.insertOne({"id_categoria": "1", "categoria": "audifonos"});
-db.categorias.insertMany({"id_categoria": "2", "categoria": "computadores"},
+db.categorias.insertMany([{"id_categoria": "2", "categoria": "computadores"},
 {"id_categoria": "3", "categoria": "pantallas"},
 {"id_categoria": "4", "categoria": "mouses"},
-{"id_categoria": "5", "categoria": "perifericos"});
+{"id_categoria": "5", "categoria": "perifericos"}]);
 
 db.carrito.insertOne({"id_producto": "1", "codigo_producto": "1550", "precio_producto": "25000", "cantidad_producto": "2", "total_producto": "50000"});
 
