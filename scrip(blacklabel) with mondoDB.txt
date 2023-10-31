@@ -145,8 +145,8 @@ db.estados.find()
 
 /////// Consultas
 
-db.Usuarios.find()
-db.Usuarios.find({_id:4});
+db.usuarios.find()
+db.usuarios.find({_id:4});
 
 db.roles.find()
 db.roles.find({_id:2});
