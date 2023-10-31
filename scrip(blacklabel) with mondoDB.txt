@@ -198,7 +198,9 @@ db.usuarios.find().skip(2).limit(2);
 
 db.productos.find().limit(3);
 
-db.usuarios.find().sort({apellido_usuario: -1}) ;
+db.usuarios.find().sort({apellido_usuario: -1});
+
+db.usuarios.find({ $or: [{nombre_usuario:/Lorena/i}, { 'contraseña': 867695}] });
 
 
 
