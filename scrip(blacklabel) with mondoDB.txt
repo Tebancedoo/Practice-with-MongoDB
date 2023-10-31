@@ -143,6 +143,62 @@ show collections
 db.estados.find()
 
 
+/////// Consultas
+
+db.Usuarios.find()
+db.Usuarios.find({_id:4});
+
+db.roles.find()
+db.roles.find({_id:2});
+
+db.carrito.find()
+db.carrito.find({precio_producto:{$lt:150000}});
+db.carrito.find({cantidad_producto:{$lte:1}});
+db.carrito.find({total_producto:{$gt:10000}});
+
+db.productos.find().sort({id_categoria:1});
+db.productos.find().sort({id_categoria:-1});
+
+
+db.usuarios.find();
+
+db.productos.find({ precio_producto: { $gte: 100000 } });
+
+db.productos.find({ id_categoria: 1 });
+
+db.productos.find({ documento: 1011094411 });
+
+db.carrito.find({ codigo_producto: "ac1", precio_producto: { $gte: 50000 } });
+
+db.usuarios.find({ nombre_usuario: /^j/ });
+
+db.usuarios.findOne({ correo: "brayan@gmail.com" });
+
+db.usuarios.find().sort({ documento: 1 }).limit(5);
+
+db.productos.find().sort({ precio_producto: -1 }).limit(1);
+
+db.productos.find({ precio_producto: { $gte: 10000, $lte: 50000 } });
+
+db.usuarios.find({ id_estado: 1 });
+
+db.usuarios.find({nombre_usuario: {$eq: "jesus"}});
+
+db.usuarios.find({$and:[{nombre_usuario: "jose"},{documento: 1554789660}]});
+
+db.carrito.find({$or:[{cantidad_producto: 1},{codigo_producto: "hij1"}]});
+
+db.usuarios.find({ nombre_usuario: { $ne: "esteban" } });
+
+db.categorias.find({},{_id: 0, categoria: 1}); 
+
+db.productos.find({ nombre_producto: { $in: ["moto g5", "redmi", "mesa electrica"] } });
+
+db.usuarios.find().skip(2).limit(2); 
+
+db.productos.find().limit(3);
+
+db.usuarios.find().sort({apellido_usuario: -1}) ;
 
 
 
